@@ -1,0 +1,50 @@
+# ─── Activation ───────────────────────────────────────────────────────────────
+
+# Require a held axe to trigger tree falling
+require-axe: true
+
+# If true, sneaking while breaking a log skips timber (lets you selectively chop)
+sneak-disables: true
+
+# Worlds where timber is disabled (exact world name, case-sensitive)
+# Example:  disabled-worlds: [creative_world, admin_arena]
+disabled-worlds: []
+
+# ─── Tree detection ────────────────────────────────────────────────────────────
+
+# Only trigger when breaking within this many blocks above the lowest log
+max-break-height: 3
+
+# Minimum connected leaf blocks required — rejects player-built log structures
+min-leaves: 5
+
+# Require the base log to sit on natural terrain (dirt, stone, sand, etc.)
+require-natural-root: true
+
+# Maximum logs in one tree (0 = unlimited). Warning: unlimited can lag the server
+# on artificially large trees. Recommended: 500 for public servers.
+max-logs: 0
+
+# ─── Drops & balance ──────────────────────────────────────────────────────────
+
+# Damage the axe 1 durability per log felled (respects Unbreaking enchantment).
+# Keeps timber balanced — a diamond axe lasts ~130 trees without Unbreaking.
+damage-axe: true
+
+# Milliseconds a player must wait between timber triggers (prevents spam/lag)
+cooldown-ms: 100
+
+# Strip VINE and GLOW_LICHEN blocks clinging to the tree during the fall.
+# Vines drop nothing without shears — they are visual only.
+strip-vines: true
+
+# ─── Animation ────────────────────────────────────────────────────────────────
+
+# Horizontal velocity added per block of height (higher = more dramatic arc)
+fall-multiplier: 0.07
+
+# Maximum number of leaf FallingBlock entities per tree (all leaves still drop loot)
+max-visual-leaves: 120
+
+# Whether falling log entities can damage players/mobs
+hurt-entities: false

@@ -1,0 +1,45 @@
+# ── Maven build output ────────────────────────────────────────────────────────
+target/
+
+# ── Test server ───────────────────────────────────────────────────────────────
+# Worlds
+testserver/world
+testserver/world_nether
+testserver/world_the_end
+# Logs & crash reports
+testserver/logs
+testserver/crash-reports
+# Paper internals & downloaded binaries
+testserver/cache
+testserver/libraries
+testserver/versions
+testserver/config
+testserver/version_history.json
+# Any JAR files in testserver (Paper server jar + built plugin jar)
+testserver/**/*.jar
+testserver/*.jar
+# Plugin-generated data (server UUIDs, profiler state, etc.)
+testserver/plugins/bStats
+testserver/plugins/spark
+testserver/plugins/Timber
+testserver/plugins/Topple
+# Server runtime files
+testserver/usercache.json
+testserver/ops.json
+testserver/whitelist.json
+testserver/banned-ips.json
+testserver/banned-players.json
+testserver/.console_history
+
+# ── Claude Code local settings ────────────────────────────────────────────────
+.claude
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.idea
+*.iml
+.vscode
+*.class
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

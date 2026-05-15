@@ -1,0 +1,25 @@
+name: Topple
+version: '${project.version}'
+main: me.topple.TopplePlugin
+description: >
+  Chop the base of a tree with an axe and watch the whole thing fall — logs arc
+  outward, the canopy explodes, vines strip away, and all loot drops at the stump.
+  Smart tree detection ignores player-built log structures.
+api-version: '26.1'
+authors:
+  - timber-dev
+website: https://modrinth.com/plugin/topple
+
+commands:
+  topple:
+    description: Topple plugin management
+    permission: topple.admin
+    usage: /topple [reload]
+
+permissions:
+  topple.use:
+    description: Player can trigger the Topple mechanic
+    default: true
+  topple.admin:
+    description: Access to /topple admin commands
+    default: op
