@@ -1,0 +1,28 @@
+# ── ElytraArmor Configuration ──────────────────────────────────────────────
+
+# Anvil combining: put Elytra in one slot and any chestplate in the other.
+anvil-combine: true
+
+# XP levels consumed when combining via anvil (0 = free).
+anvil-cost: 5
+
+# Allow splitting the combined item back at a smithing table (costs 5 levels by default).
+allow-split: true
+split-cost: 5
+
+# Exclude Curse of Binding when merging enchantments (recommended: true).
+exclude-curse-of-binding: true
+
+# Particles when the player starts gliding while wearing combined armor.
+glow-on-glide: true
+
+# Durability: combined item uses the average of both input durability percentages.
+average-durability: true
+
+messages:
+  combined: "&a✦ Combined! Equip in your chest slot to fly AND stay protected."
+  split: "&aSuccessfully separated Elytra and chestplate."
+  not-holding: "&cHold an Elytra in your main hand and a chestplate in your offhand (or vice versa)."
+  already-combined: "&cOne of the items is already a combined Elytra-Armor."
+  no-permission: "&cYou don't have permission to do that."
+  split-not-combined: "&cThe item in your chest slot is not a combined Elytra-Armor."

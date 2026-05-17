@@ -1,0 +1,21 @@
+# ── ElytraArmor Configuration ──────────────────────────────────────────────
+
+# Resource pack HTTP server.
+# Set pack-host to the IP/hostname players use to reach this server.
+pack-host: localhost
+pack-port: 8085
+
+# Anvil combining: place Elytra + any chestplate in the slots to combine.
+anvil-combine: true
+
+# Allow splitting by dropping the combined item onto a stonecutter block.
+allow-split: true
+
+# Strip Curse of Binding from the chestplate when merging enchantments.
+exclude-curse-of-binding: true
+
+# Combined item uses the average durability of both input items.
+average-durability: true
+
+# Spawn particles when the player starts gliding in combined armor.
+glow-on-glide: true

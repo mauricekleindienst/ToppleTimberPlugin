@@ -1,0 +1,18 @@
+name: StatsPlugin
+version: '${project.version}'
+main: me.statsplugin.StatsPlugin
+description: Player statistics with a beautiful Minecraft-themed web dashboard.
+api-version: '26.1'
+authors:
+  - timber-dev
+
+commands:
+  stats:
+    description: Show stats web dashboard info or reload config
+    permission: stats.admin
+    usage: /stats [reload]
+
+permissions:
+  stats.admin:
+    description: Access to /stats admin commands
+    default: op

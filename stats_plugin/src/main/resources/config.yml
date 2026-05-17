@@ -1,0 +1,10 @@
+# StatsPlugin Configuration
+
+# Port for the web statistics dashboard
+web-port: 8080
+
+# How often to auto-save stats to disk (in seconds)
+save-interval: 300
+
+# Bind address for the web server (use 0.0.0.0 for all interfaces)
+bind-address: 0.0.0.0

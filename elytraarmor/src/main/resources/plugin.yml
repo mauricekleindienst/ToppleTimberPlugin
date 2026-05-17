@@ -1,0 +1,6 @@
+name: ElytraArmor
+version: '${project.version}'
+main: com.elytraarmor.ElytraArmorPlugin
+api-version: '26.1'
+description: Combine Elytra + chestplate for flight and full protection.
+authors: [ sarius ]
